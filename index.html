@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>へや - index</title>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        .invalid-feedback {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <div class="collapse navbar-collapse" id="navbarsExample02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#portfoliodiv">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactdiv">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header></header>
+
+    <div class="container">
+        <div class="jumbotron">
+            <p>PORTFOLIO</p>
+            <h5>some of my works</h5>
+        </div>
+    </div>
+
+    <div class="album py-5 bg-transparent" id="portfoliodiv">
+        <div class="container">
+            <div class="row" id="portfoliorow">
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="proj1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Verifica</h5>
+                            <p class="card-text">"Sometimes, it's the soul that needs a check-up"</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalVerifica">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="proj2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Break Time</h5>
+                            <p class="card-text">"A nice brief respite from this life's hustle and bustle"</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalBreakTime">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="proj3.png" alt="Sentenced">
+                        <div class="card-body">
+                            <h5 class="card-title">Sentenced</h5>
+                            <p class="card-text">"I am fighting for more than just the law. Also the justice and virtue that extend beyond it"</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalSentenced">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact bg-light" id="contactdiv">
+        <div class="container">
+            <div class="contactus">
+                <h1>Contact Us</h1>
+            </div>
+            <form id="contactForm">
+                <div class="form-group mb-3">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <div id="emailError" class="invalid-feedback">Please enter a valid email address containing "@".</div>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="inputFeedback">Feedback</label>
+                    <textarea class="form-control" id="inputFeedback" rows="3"></textarea>
+                    <div id="feedbackError" class="invalid-feedback">Please provide your feedback.</div>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>lhv0322</footer>
+
+    <!-- Modals -->
+    <div class="modal fade" id="modalVerifica" tabindex="-1" aria-labelledby="modalVerificaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalVerificaLabel">Verifica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="proj1.jpg" class="img-fluid" alt="Verifica">
+                    <p>"Sometimes, it's the soul that needs a check-up"</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBreakTime" tabindex="-1" aria-labelledby="modalBreakTimeLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalBreakTimeLabel">Break Time</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="proj2.jpg" class="img-fluid" alt="Break Time">
+                    <p>"A nice brief respite from this life's hustle and bustle"</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalSentenced" tabindex="-1" aria-labelledby="modalSentencedLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSentencedLabel">Sentenced</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="proj3.png" class="img-fluid" alt="Sentenced">
+                    <p>"I am fighting for more than just the law. Also the justice and virtue that extend beyond it"<</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

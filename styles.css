@@ -1,0 +1,75 @@
+@font-face {
+    font-family: GenEiAntique;
+    src: url(GenEiAntiqueNv5-M.ttf);
+}
+
+header{
+    font-family: GenEiAntique;
+    color:whitesmoke;
+    text-transform: uppercase;
+    background: #202020;
+    padding-top:70px;
+    padding-bottom:30px;
+    font-size: xx-large;
+    text-align: right;
+    text-indent: 10%;
+}
+
+.navbar-brand{
+    font-family:GenEiAntique;
+}
+
+.nav-item{
+    font-family:GenEiAntique;
+}
+
+body{
+    background-image:url("bg-pattern.png")
+}
+
+.jumbotron{
+    padding-top:30px;
+    font-size: 64pt;
+    color: whitesmoke;
+    text-shadow: black;
+    font-family:GenEiAntique;
+    text-align:center;
+}
+
+.contactus{
+    font-family: GenEiAntique;
+    color: #202020;
+    text-align:center;
+}
+.form-group{
+    font-family: GenEiAntique;
+    padding-left: 10%;
+    padding-right:10%;
+}
+.contact{
+    padding-top:60px;
+}
+.submit{
+    padding-top:10px;
+}
+
+footer{
+    font-family: GenEiAntique;
+    color:whitesmoke;
+    text-transform: uppercase;
+    background: #202020;
+    padding-top:70px;
+    padding-bottom:30px;
+    font-size: xx-large;
+    text-align: center;
+}
+.portfoliodiv{
+    font-family: GenEiAntique;
+}
+
+.album{
+    font-family: GenEiAntique;
+}
+.modal{
+    font-family: GenEiAntique;
+}
